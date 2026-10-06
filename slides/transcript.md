@@ -51,9 +51,6 @@ And giving every device a trustworthy identity.
 
 This stays conceptual, so you leave with a model, not a list of clicks.
 
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
-
 ## Slide 2 - Agenda - Three building blocks (42 words, about 0:25)
 
 Here's our route.
@@ -69,9 +66,6 @@ One thread runs through all three.
 A device is not trusted because it's ours.
 
 It has to keep proving it deserves access.
-
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
 
 ## Slide 3 - Why Zero Trust for devices (58 words, about 0:35)
 
@@ -91,9 +85,6 @@ Intune answers, is this device okay?
 
 Conditional Access answers, should we let it in?
 
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
-
 ## Slide 4 - Pillar one divider - Compliance and remediation (14 words, about 0:08)
 
 Let's start with pillar one.
@@ -101,9 +92,6 @@ Let's start with pillar one.
 Compliance and remediation.
 
 This decides what healthy actually means.
-
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
 
 ## Slide 5 - Profiles enforce, compliance verifies (59 words, about 0:35)
 
@@ -124,9 +112,6 @@ A compliance policy confirms it's true.
 Use both.
 
 A setting you never verify is just a promise.
-
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
 
 ## Slide 6 - Risk-based evaluation (83 words, about 0:50)
 
@@ -150,9 +135,6 @@ You set the bar.
 
 If risk goes high, the device is noncompliant immediately, no wait for check-in.
 
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
-
 ## Slide 7 - Interactive demo - Compliance evaluator (59 words, about 0:35)
 
 Let me show you.
@@ -173,9 +155,6 @@ Every static check passes, yet the device still fails, because risk is above our
 
 That's the two layers working together.
 
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
-
 ## Slide 8 - Scoping with groups and filters (77 words, about 0:46)
 
 Now, who gets the policy?
@@ -191,9 +170,6 @@ Then dynamic groups, where membership follows attributes like department and upd
 Finally, assignment filters give precision without a group for every variation, for example only corporate-owned iPhones.
 
 The aim is to avoid group bloat and still hit the right devices.
-
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
 
 ## Slide 9 - Actions for noncompliance - graduated timeline (79 words, about 0:47)
 
@@ -211,9 +187,6 @@ And only after a long period, around thirty days, we retire the device and wipe 
 
 Users get every chance to fix things first.
 
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
-
 ## Slide 10 - Remediation - self-healing devices (55 words, about 0:33)
 
 The best outcome is that users never act at all.
@@ -230,9 +203,6 @@ Target them precisely.
 
 Devices heal in the background, so tickets and disruption both drop.
 
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
-
 ## Slide 11 - Monitoring and reporting (47 words, about 0:28)
 
 Then we need visibility.
@@ -245,9 +215,6 @@ You cannot prove what you haven't measured.
 
 Reporting turns device health into evidence.
 
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
-
 ## Slide 12 - Pillar two divider - Microsoft Tunnel (16 words, about 0:10)
 
 Pillar two.
@@ -257,9 +224,6 @@ Microsoft Tunnel.
 The devices are healthy.
 
 Now they need to reach on-premises resources, securely.
-
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
 
 ## Slide 13 - Tunnel - secure access without always-on VPN (90 words, about 0:54)
 
@@ -281,9 +245,6 @@ One note: if you're starting fresh with no Tunnel infrastructure, compare Micros
 
 Tunnel fits when you need Intune-managed VPN profiles, or already run it.
 
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
-
 ## Slide 14 - Tunnel building blocks (64 words, about 0:38)
 
 Four building blocks.
@@ -299,9 +260,6 @@ Deploy the client app and a VPN profile for Android or iOS.
 Split tunneling and DNS decide which traffic travels through the tunnel.
 
 And notice certificates appear here already, a natural bridge to pillar three.
-
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
 
 ## Slide 15 - Interactive demo - Split-tunneling router (67 words, about 0:40)
 
@@ -321,9 +279,6 @@ If I disconnect, internal resources are blocked while public sites still work.
 
 That's the balance.
 
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
-
 ## Slide 16 - Tunnel for MAM and operations (62 words, about 0:37)
 
 Two operations points.
@@ -338,9 +293,6 @@ We use mst-cli for deeper diagnostics, and journalctl for logs.
 
 Proactive monitoring catches a certificate expiry before it becomes an outage.
 
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
-
 ## Slide 17 - Pillar three divider - Microsoft Cloud PKI (11 words, about 0:07)
 
 Pillar three.
@@ -348,9 +300,6 @@ Pillar three.
 Microsoft Cloud PKI.
 
 Giving every device a trustworthy identity.
-
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
 
 ## Slide 18 - Cloud PKI - retiring the old PKI stack (82 words, about 0:49)
 
@@ -369,9 +318,6 @@ And we use a two-tier hierarchy, a root CA and an issuing CA.
 The root stays protected while the issuing CA does daily work.
 
 It's available in the Intune Suite or as an add-on.
-
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
 
 ## Slide 19 - Certificate lifecycle and renewal (88 words, about 0:53)
 
@@ -393,9 +339,6 @@ Practical tip: for remote devices that check in rarely, use a higher threshold, 
 
 And deploy the trusted certificate profile before the SCEP profile.
 
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
-
 ## Slide 20 - Interactive demo - Certificate renewal simulator (78 words, about 0:47)
 
 Let me make this concrete.
@@ -416,9 +359,6 @@ It moves to revoked, rejected through the revocation list.
 
 The whole life is visible in one place.
 
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
-
 ## Slide 21 - Certificate health and governance (69 words, about 0:41)
 
 We also need certificate health.
@@ -435,9 +375,6 @@ Build alerts so failures surface before users hit them.
 
 Revocation only matters if it's actually enforced.
 
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
-
 ## Slide 22 - Putting it together (41 words, about 0:25)
 
 Put the three together.
@@ -449,9 +386,6 @@ Tunnel uses that identity for secure on-demand access.
 Compliance, with Conditional Access, decides whether the device is trusted enough to use either.
 
 Identity, access, trust, all reinforcing each other.
-
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
 
 ## Slide 23 - Key takeaways (48 words, about 0:29)
 
@@ -467,9 +401,6 @@ Four: remediate automatically so devices heal before users are blocked.
 
 Five: Tunnel delivers on-demand access, Cloud PKI automates identity.
 
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
-
 ## Slide 24 - Next steps and Q&A (43 words, about 0:26)
 
 That's the tour.
@@ -482,12 +413,7 @@ Thank you.
 
 I'm happy to take questions.
 
-
-> Delivery cue: pause at each full stop. Let the point land before moving on.
-
-
 ---
-
 
 ## Pacing plan (staying inside 15 minutes)
 
