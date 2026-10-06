@@ -33,6 +33,9 @@ Each module file contains main takeaways, full notes, the knowledge-check answer
    Cloud-hosted CA hierarchy (root plus issuing, and BYOCA), licensing limits, trust deployment, SCEP profile configuration and the enrollment flow, revocation and CRL behavior, certificate health monitoring.
    Achievement: https://learn.microsoft.com/api/achievements/share/en-us/DatDo-7483/K9VXKW7B?sharingId=15FA99AA28223E58
 
+7. Deploy and Manage Applications Using Microsoft Intune
+   Achievement: https://learn.microsoft.com/api/achievements/share/en-us/DatDo-7483/P62X7EQ4?sharingId=15FA99AA28223E58
+
 ## Slides
 
 - [intune-device-security.html](slides/intune-device-security.html) - self-contained slide deck (24 slides), open directly in a browser. Covers three of the six modules: compliance and remediation, Microsoft Tunnel, and Cloud PKI.
